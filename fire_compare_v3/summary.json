@@ -1,0 +1,139 @@
+{
+  "datasets": {
+    "stable": {
+      "path": "/mnt/exacloud/cchang_woodwellclimate_org/wiemip/weimip_inputs/explicit-fire_stable_full_v3.nc",
+      "years": [
+        1850,
+        2000
+      ],
+      "shape": [
+        151,
+        123,
+        720
+      ],
+      "total_burns": 8428,
+      "mean_annual_burns": 55.81456953642384,
+      "pixels_ever_burned": 8428,
+      "jday_mean": 197.58163265306123,
+      "jday_median": 197.0,
+      "jday_min": 62.0,
+      "jday_max": 360.0,
+      "freq_max": 1.0,
+      "reburn_gaps": {
+        "n_gaps": 0,
+        "median": null,
+        "mean": null,
+        "pct_lt_30": null
+      }
+    },
+    "GFDL-ESM4": {
+      "path": "/mnt/exacloud/cchang_woodwellclimate_org/wiemip/weimip_inputs/explicit-fire_GFDL-ESM4_v3_new.nc",
+      "years": [
+        1850,
+        2000
+      ],
+      "shape": [
+        151,
+        123,
+        720
+      ],
+      "total_burns": 21298,
+      "mean_annual_burns": 141.04635761589404,
+      "pixels_ever_burned": 12221,
+      "jday_mean": 199.8474974175979,
+      "jday_median": 198.0,
+      "jday_min": 8.0,
+      "jday_max": 365.0,
+      "freq_max": 7.0,
+      "reburn_gaps": {
+        "n_gaps": 9077,
+        "median": 37.0,
+        "mean": 40.965627409937206,
+        "pct_lt_30": 22.485402666079104
+      }
+    },
+    "IPSL-CM6A-LR": {
+      "path": "/mnt/exacloud/cchang_woodwellclimate_org/wiemip/weimip_inputs/explicit-fire_IPSL-CM6A-LR_v3_new.nc",
+      "years": [
+        1850,
+        2000
+      ],
+      "shape": [
+        151,
+        123,
+        720
+      ],
+      "total_burns": 20591,
+      "mean_annual_burns": 136.36423841059602,
+      "pixels_ever_burned": 12516,
+      "jday_mean": 198.3976494585013,
+      "jday_median": 198.0,
+      "jday_min": 1.0,
+      "jday_max": 365.0,
+      "freq_max": 7.0,
+      "reburn_gaps": {
+        "n_gaps": 8075,
+        "median": 37.0,
+        "mean": 39.8677399380805,
+        "pct_lt_30": 23.046439628482972
+      }
+    },
+    "UKESM1-0-LL": {
+      "path": "/mnt/exacloud/cchang_woodwellclimate_org/wiemip/weimip_inputs/explicit-fire_UKESM1-0-LL_v3_new.nc",
+      "years": [
+        1850,
+        2000
+      ],
+      "shape": [
+        151,
+        123,
+        720
+      ],
+      "total_burns": 20237,
+      "mean_annual_burns": 134.01986754966887,
+      "pixels_ever_burned": 12775,
+      "jday_mean": 199.68745367396355,
+      "jday_median": 199.0,
+      "jday_min": 2.0,
+      "jday_max": 365.0,
+      "freq_max": 7.0,
+      "reburn_gaps": {
+        "n_gaps": 7462,
+        "median": 36.5,
+        "mean": 39.43111766282498,
+        "pct_lt_30": 23.009916912355937
+      }
+    }
+  },
+  "overlap_vs_stable": [
+    {
+      "gcm": "GFDL-ESM4",
+      "stable_ever": 8428,
+      "gcm_ever": 12221,
+      "both": 8341,
+      "overlap_of_stable_pct": 98.96772662553393,
+      "overlap_of_gcm_pct": 68.25137059160461
+    },
+    {
+      "gcm": "IPSL-CM6A-LR",
+      "stable_ever": 8428,
+      "gcm_ever": 12516,
+      "both": 8377,
+      "overlap_of_stable_pct": 99.39487422876127,
+      "overlap_of_gcm_pct": 66.93032917865132
+    },
+    {
+      "gcm": "UKESM1-0-LL",
+      "stable_ever": 8428,
+      "gcm_ever": 12775,
+      "both": 8390,
+      "overlap_of_stable_pct": 99.54912197437115,
+      "overlap_of_gcm_pct": 65.67514677103718
+    }
+  ],
+  "notes": [
+    "stable_full_v3 uses 20y\u2192151y tile + \u22481/8 burn thinning; GCM files are native 151y draws.",
+    "Expect fewer total burns in stable than GCM products for that reason.",
+    "DOY is 1-based noleap (1..365)."
+  ]
+}
