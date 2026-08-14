@@ -1,0 +1,44 @@
+{
+  "labels": {
+    "v3": "v3: Helene's 30-yr reburn",
+    "v4": "v4: Stefano's 1-yr reburn",
+    "v5": "v5: Joshua's algorithm"
+  },
+  "filters": {
+    "v3": "Helene \u226530-year reburn lockout + \u22641 burn/pixel/year",
+    "v4": "Stefano \u22641 burn/pixel/year only (no multi-year FRI)",
+    "v5": "Joshua recurrence (stable burn-in + RecurrenceLimit on GCM candidates)"
+  },
+  "totals": {
+    "v3_sum_pixels": 20237.0,
+    "v4_sum_pixels": 327446.0,
+    "v5_sum_pixels": 65919.0,
+    "v3_mean_area_km2": 190833.22846387405,
+    "v4_mean_area_km2": 3225418.154884111,
+    "v5_mean_area_km2": 632736.7267993358,
+    "1850_v3_area": 2010750.429027637,
+    "1850_v4_area": 2010750.429027637,
+    "1850_v5_area": 1508041.253725985,
+    "1990s_v3_area": 73359.68876728725,
+    "1990s_v4_area": 4895587.218795693,
+    "1990s_v5_area": 712942.6193129711,
+    "mean_ratio_v3_to_v4": 0.07977513713096178,
+    "mean_ratio_v5_to_v4": 0.21174152973415888
+  },
+  "v5_fri_overrides": {
+    "definition": "exp_pred_prob < 0 (sign-flipped original candidate probability)",
+    "n_kept": 65919,
+    "n_override": 261527,
+    "override_fraction": 0.7986874171619137,
+    "mean_abs_pred_prob_overrides": 0.1794182488901959,
+    "pixels_ever_overridden": 11414
+  },
+  "paths": {
+    "v3_native": "/mnt/exacloud/cchang_woodwellclimate_org/wiemip/weimip_inputs/explicit-fire_UKESM1-0-LL_v3.nc",
+    "v4_native": "/mnt/exacloud/cchang_woodwellclimate_org/wiemip/weimip_inputs/explicit-fire_UKESM1-0-LL_v4.nc",
+    "v5_native": "/mnt/exacloud/cchang_woodwellclimate_org/wiemip/weimip_inputs/explicit-fire_UKESM1-0-LL_v5.nc",
+    "v3_new": "/mnt/exacloud/cchang_woodwellclimate_org/wiemip/weimip_inputs/explicit-fire_UKESM1-0-LL_v3_new.nc",
+    "v4_new": "/mnt/exacloud/cchang_woodwellclimate_org/wiemip/weimip_inputs/explicit-fire_UKESM1-0-LL_v4_new.nc",
+    "v5_new": "/mnt/exacloud/cchang_woodwellclimate_org/wiemip/weimip_inputs/explicit-fire_UKESM1-0-LL_v5_new.nc"
+  }
+}
